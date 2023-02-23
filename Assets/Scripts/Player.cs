@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 public class Player : MonoBehaviour
 {
-
+    public TextMeshProUGUI HP;
     [SerializeField] int playerHP;
     public GameObject bulletPrefab;
 
@@ -14,6 +16,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerHpSH();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,6 +25,12 @@ public class Player : MonoBehaviour
 
             playerHP -= 1;
         }
+    }
+
+    public void playerHpSH()
+    {
+        HP.text = "player HP: " + playerHP.ToString();
+
     }
     // Update is called once per frame
     void FixedUpdate()
