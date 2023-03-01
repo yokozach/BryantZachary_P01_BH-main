@@ -207,6 +207,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &497419216 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4777633001378559067, guid: 5e318279b3dd5ad43bea6abdb3fb429c, type: 3}
+  m_PrefabInstance: {fileID: 699390764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa548b2192c29a429e7707594f0e1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &699390764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -264,17 +275,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e318279b3dd5ad43bea6abdb3fb429c, type: 3}
---- !u!114 &699390765 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7629576246457314500, guid: 5e318279b3dd5ad43bea6abdb3fb429c, type: 3}
-  m_PrefabInstance: {fileID: 699390764}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 615fa8b04d68ac8428a144d625a4f1c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1364881464
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,7 +356,15 @@ PrefabInstance:
     - target: {fileID: 6045738891557269107, guid: 8f96aecfec9549b4b9ac1fd8bd0208c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 699390765}
+      objectReference: {fileID: 497419216}
+    - target: {fileID: 6045738891557269107, guid: 8f96aecfec9549b4b9ac1fd8bd0208c1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045738891557269107, guid: 8f96aecfec9549b4b9ac1fd8bd0208c1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scene_state_machine, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7271288193839889108, guid: 8f96aecfec9549b4b9ac1fd8bd0208c1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -444,6 +452,14 @@ PrefabInstance:
     - target: {fileID: 7747495381590264066, guid: 8f96aecfec9549b4b9ac1fd8bd0208c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 699390765}
+      objectReference: {fileID: 497419216}
+    - target: {fileID: 7747495381590264066, guid: 8f96aecfec9549b4b9ac1fd8bd0208c1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: leave
+      objectReference: {fileID: 0}
+    - target: {fileID: 7747495381590264066, guid: 8f96aecfec9549b4b9ac1fd8bd0208c1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scene_state_machine, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f96aecfec9549b4b9ac1fd8bd0208c1, type: 3}

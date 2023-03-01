@@ -8,7 +8,7 @@ public class Boss_Stats : MonoBehaviour
 {
 
     public Image HealhBar_EN;
-    public Scene_state_machine scene_;
+    public Scene_state_machine scene;
     [SerializeField] float bossHP = 10000f;
     private float MaxbossHP = 10000f;
     [SerializeField] private GameObject minX;
@@ -37,8 +37,8 @@ public class Boss_Stats : MonoBehaviour
 
     public void Death()
     {
-        Destroy(gameObject);
-        scene_.winner();
+       
+        scene.winner();
     }
     public void shotProjection()
     {

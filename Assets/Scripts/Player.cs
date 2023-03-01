@@ -56,6 +56,7 @@ public class Player : MonoBehaviour
 
         if (playerHP <= 0)
         {
+            Debug.Log("Dead");
             scene_.looser();
             
         }

@@ -442,7 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10e4ca42379c34488a15f18b9e67c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_: {fileID: 4777633001378559067, guid: 5e318279b3dd5ad43bea6abdb3fb429c, type: 3}
+  scene_: {fileID: 1767467444}
   HealhBar: {fileID: 269564015305926}
   playerHP: 5
   bulletPrefab: {fileID: 3522114278510897204, guid: 347b50c94a8710540935f5cc3c0c020a, type: 3}
@@ -701,6 +701,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4777633001378559067, guid: 5e318279b3dd5ad43bea6abdb3fb429c, type: 3}
+      propertyPath: _states
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777633001378559067, guid: 5e318279b3dd5ad43bea6abdb3fb429c, type: 3}
       propertyPath: _changed
       value: 0
       objectReference: {fileID: 0}
@@ -817,6 +821,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2302308153278899435, guid: 7a4efb30700b89543b1a88e3d243892d, type: 3}
+      propertyPath: scene
+      value: 
+      objectReference: {fileID: 1767467444}
     - target: {fileID: 2302308153278899435, guid: 7a4efb30700b89543b1a88e3d243892d, type: 3}
       propertyPath: bossHP
       value: 10000
@@ -1503,6 +1511,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756480565}
   m_CullTransparentMesh: 1
+--- !u!114 &1767467444 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4777633001378559067, guid: 5e318279b3dd5ad43bea6abdb3fb429c, type: 3}
+  m_PrefabInstance: {fileID: 694501086}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa548b2192c29a429e7707594f0e1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1780312324
 GameObject:
   m_ObjectHideFlags: 0
