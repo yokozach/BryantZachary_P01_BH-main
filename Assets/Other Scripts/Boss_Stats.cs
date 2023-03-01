@@ -2,9 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.UI;
 public class Boss_Stats : MonoBehaviour
 {
-    [SerializeField] int bossHP = 10000;
+
+    public Image HealhBar_EN;
+    public Scene_state_machine scene_;
+    [SerializeField] float bossHP = 10000f;
+    private float MaxbossHP = 10000f;
     [SerializeField] private GameObject minX;
     [SerializeField] private GameObject maxX;
 
@@ -14,6 +20,7 @@ public class Boss_Stats : MonoBehaviour
         {
 
             bossHP -= 1;
+            HealhBar_EN.fillAmount = bossHP / MaxbossHP;
         }
     }
 
@@ -24,19 +31,19 @@ public class Boss_Stats : MonoBehaviour
         {
 
             Death();
-            SceneManager.LoadScene(3);
+           
         }
     }
 
     public void Death()
     {
         Destroy(gameObject);
-
+        scene_.winner();
     }
     public void shotProjection()
     {
 
-       Vector2 horizontalBounds = new Vector2(minX.transform.position.x, maxX.transform.position.x);
+       //Vector2 horizontalBounds = new Vector2(minX.transform.position.x, maxX.transform.position.x);
     }
     
 }

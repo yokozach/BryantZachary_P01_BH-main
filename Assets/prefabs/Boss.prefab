@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2302308153278899432}
   - component: {fileID: 2302308153278899433}
+  - component: {fileID: 1813925703568095472}
   - component: {fileID: 2302308153278899435}
   - component: {fileID: 2302308153278899430}
   - component: {fileID: 2302308153278899431}
@@ -90,6 +91,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1813925703568095472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2302308153278899428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ec58d4b1f847458037c5ce5befbb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minSpawnLoc: {fileID: 264754402046871098}
+  _maxSpawnLoc: {fileID: 8268208980085374847}
+  SpawnCooldown: 2
+  _spawnList:
+  - {fileID: 7291029587024255966, guid: f67c825d133884f47b721abf611d01f9, type: 3}
 --- !u!114 &2302308153278899435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3614871721728756025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.94, y: -3.32, z: 0}
+  m_LocalPosition: {x: 7.73, y: -3.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -191,7 +209,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3614871721728756025}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7369b83610ea6db4fae59ec8a8edb607, type: 3}
   m_Name: 
@@ -214,7 +232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4181324752897044071
 Transform:
   m_ObjectHideFlags: 0
@@ -284,7 +302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8376159970850088642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.24, y: -3.64, z: 0}
+  m_LocalPosition: {x: -7.3, y: -3.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -298,7 +316,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8376159970850088642}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7369b83610ea6db4fae59ec8a8edb607, type: 3}
   m_Name: 

@@ -17,7 +17,7 @@ public class BoltVehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += -transform.up * bulletSpeed * Time.deltaTime;
+        transform.position += -transform.up * bulletSpeed * Time.deltaTime/3;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

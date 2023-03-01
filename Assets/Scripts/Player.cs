@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public TextMeshProUGUI HP;
+    public Scene_state_machine scene_;
+    public Image HealhBar; 
+    
     [SerializeField] int playerHP;
     public GameObject bulletPrefab;
+    private float MaxplayerHP=5f;
 
     public PlayerController playerController;
     public float playerSpeed;
@@ -16,7 +20,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        playerHpSH();
+     
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,14 +28,11 @@ public class Player : MonoBehaviour
         {
 
             playerHP -= 1;
+            HealhBar.fillAmount = playerHP / MaxplayerHP;
         }
     }
 
-    public void playerHpSH()
-    {
-        HP.text = "player HP: " + playerHP.ToString();
-
-    }
+    
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -55,7 +56,8 @@ public class Player : MonoBehaviour
 
         if (playerHP <= 0)
         {
-            SceneManager.LoadScene(2);
+            scene_.looser();
+            
         }
     }
     
