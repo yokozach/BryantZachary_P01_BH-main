@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 15
-  boss_Stats: {fileID: 2302308153278899435, guid: 7a4efb30700b89543b1a88e3d243892d, type: 3}
 --- !u!61 &3433974415840596835
 BoxCollider2D:
   m_ObjectHideFlags: 0

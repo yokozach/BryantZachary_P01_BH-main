@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.UI;
 public class Boss_Stats : MonoBehaviour
 {
-
+    [SerializeField] AudioSource audio;
     public Image HealhBar_EN;
     public Scene_state_machine scene;
     [SerializeField] float bossHP = 10000f;
@@ -20,6 +20,7 @@ public class Boss_Stats : MonoBehaviour
         {
 
             bossHP -= 1;
+            audio.Play();
             HealhBar_EN.fillAmount = bossHP / MaxbossHP;
         }
     }

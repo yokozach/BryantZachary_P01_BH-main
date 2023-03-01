@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] AudioSource audioSource;
     public Scene_state_machine scene_;
     public Image HealhBar; 
     
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour
         {
 
             playerHP -= 1;
+            audioSource.Play();
             HealhBar.fillAmount = playerHP / MaxplayerHP;
         }
     }
